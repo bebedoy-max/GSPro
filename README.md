@@ -9,7 +9,7 @@ Paket ini berisi **2 mode penggunaan** yang bisa langsung Anda pilih:
 
 ## Cara 2: Instalasi Full-Stack Next.js + Supabase + BullMQ Worker
 1. Jalankan `supabase/schema.sql` di **Supabase SQL Editor**.
-2. Salin `.env.example` menjadi `.env` dan isi kredensial Supabase serta `VAULT_SECRET_KEY`.
+2. Salin `.env.example` menjadi `.env` dan isi kredensial Supabase serta `VAULT_SECRET_KEY` (wajib, 64 karakter hex; aplikasi akan berhenti jika kosong).
 3. Install dependencies:
    ```bash
    npm install
@@ -20,5 +20,3 @@ Paket ini berisi **2 mode penggunaan** yang bisa langsung Anda pilih:
    npm run worker
    ```
 
-## Cara Push ke GitHub Repository Anda
-Klik 2x file `push-to-github.bat` (Windows) atau jalankan `bash push-to-github.sh` (Mac/Linux).
