@@ -1,0 +1,285 @@
+{
+  "role": "worker",
+  "device": "desktop",
+  "workerTab": "dashboard",
+  "adminTab": "dashboard",
+  "settingsSubTab": "proxy",
+  "config": {
+    "killSwitchOpen": true,
+    "announcement": "Pastikan email pemulihan wajib memakai domain resmi @gudangmail.my.id dan tidak terkait nomor HP.",
+    "proxyMode": "hilink_4g",
+    "modemIpUrl": "http://192.168.8.1/api/net/reconnect",
+    "rotateEveryAccounts": 5,
+    "currentPublicIp": "114.122.89.142 (Telkomsel 4G)",
+    "proxyHost": "gw.dataimpulse.com:823",
+    "proxyUser": "user_gudang_session",
+    "concurrency": 2,
+    "delaySeconds": 12,
+    "maxRetries": 2,
+    "browserHeadless": true,
+    "blockImagesCss": true,
+    "recoveryDomain": "@gudangmail.my.id",
+    "catchAllMasterEmail": "vault.induk@gmail.com",
+    "defaultMasterPasswordRule": "Auto-Random 14 Karakter (AES-256-GCM)",
+    "autoBatchPenalty": true,
+    "autoFreezeWorker": true,
+    "minWithdrawRp": 50000,
+    "maxDailyWithdrawRp": 5000000,
+    "withdrawFeeRp": 0,
+    "supportedMethods": "DANA, OVO, GOPAY, ShopeePay, BCA, SeaBank"
+  },
+  "currentWorker": {
+    "id": "WRK-01",
+    "username": "@andi_ternak",
+    "availableBalance": 320000,
+    "pendingBalance": 357500,
+    "paymentMethod": "DANA",
+    "paymentNumber": "081234567890",
+    "paymentName": "Andi Pratama",
+    "totalSubmitted": 1240,
+    "approvalRate": "96.4%",
+    "isFrozen": false
+  },
+  "accountTypes": [
+    {
+      "id": 1,
+      "name": "Gmail Fresh Non-PVA (ID)",
+      "price": 2500,
+      "holdHours": 48,
+      "domain": "@gudangmail.my.id",
+      "quotaUsed": 550,
+      "dailyQuota": 1000,
+      "isOpen": true
+    },
+    {
+      "id": 2,
+      "name": "Gmail Tua 2022–2023",
+      "price": 6500,
+      "holdHours": 24,
+      "domain": "@gudangmail.my.id",
+      "quotaUsed": 180,
+      "dailyQuota": 300,
+      "isOpen": true
+    },
+    {
+      "id": 3,
+      "name": "Outlook / Hotmail Fresh",
+      "price": 1800,
+      "holdHours": 48,
+      "domain": "Bebas",
+      "quotaUsed": 500,
+      "dailyQuota": 500,
+      "isOpen": false
+    }
+  ],
+  "selectedCategoryId": 1,
+  "bulkInputText": "agus.pratama99@gmail.com|Setor123!|agus99@gudangmail.my.id\nbudi.santoso88@gmail.com|Setor123!|budi88@gudangmail.my.id\ncitra.dewi21@gmail.com|Setor123!|citra21@domainlain.com\ndeni.kurniawan@gmail.com|TanpaRecovery",
+  "batches": [
+    {
+      "id": "BCH-9088",
+      "workerId": "WRK-02",
+      "workerName": "@rizky_farmer",
+      "categoryName": "Gmail Fresh Non-PVA (ID)",
+      "priceLocked": 2500,
+      "total": 120,
+      "queued": 120,
+      "hold": 0,
+      "approved": 0,
+      "rejected": 0,
+      "status": "QUEUED",
+      "unlockIn": "Menunggu Bot",
+      "submittedAt": "10 menit lalu",
+      "estRp": 300000,
+      "accounts": [
+        {
+          "email": "rizky.acc01@gmail.com",
+          "initPass": "Setor123!",
+          "newPass": "-",
+          "rec": "rz01@gudangmail.my.id",
+          "status": "queued",
+          "reason": "-"
+        },
+        {
+          "email": "rizky.acc02@gmail.com",
+          "initPass": "Setor123!",
+          "newPass": "-",
+          "rec": "rz02@gudangmail.my.id",
+          "status": "queued",
+          "reason": "-"
+        }
+      ]
+    },
+    {
+      "id": "BCH-9082",
+      "workerId": "WRK-01",
+      "workerName": "@andi_ternak",
+      "categoryName": "Gmail Fresh Non-PVA (ID)",
+      "priceLocked": 2500,
+      "total": 50,
+      "queued": 0,
+      "hold": 47,
+      "approved": 0,
+      "rejected": 3,
+      "status": "HOLD",
+      "unlockIn": "45j 12m",
+      "submittedAt": "Hari ini, 09:15",
+      "estRp": 117500,
+      "accounts": [
+        {
+          "email": "agus.pratama99@gmail.com",
+          "initPass": "Setor123!",
+          "newPass": "Vault#99281!",
+          "rec": "agus99@gudangmail.my.id",
+          "status": "hold",
+          "reason": "Garansi 48J"
+        },
+        {
+          "email": "budi.santoso88@gmail.com",
+          "initPass": "Setor123!",
+          "newPass": "Vault#77412!",
+          "rec": "budi88@gudangmail.my.id",
+          "status": "hold",
+          "reason": "Garansi 48J"
+        },
+        {
+          "email": "gagal.login01@gmail.com",
+          "initPass": "SalahPass",
+          "newPass": "-",
+          "rec": "gg01@gudangmail.my.id",
+          "status": "rejected",
+          "reason": "Wrong Password"
+        }
+      ]
+    },
+    {
+      "id": "BCH-8910",
+      "workerId": "WRK-01",
+      "workerName": "@andi_ternak",
+      "categoryName": "Gmail Fresh Non-PVA (ID)",
+      "priceLocked": 2500,
+      "total": 100,
+      "queued": 0,
+      "hold": 96,
+      "approved": 0,
+      "rejected": 4,
+      "status": "HOLD",
+      "unlockIn": "18j 05m",
+      "submittedAt": "Kemarin, 14:20",
+      "estRp": 240000,
+      "accounts": [
+        {
+          "email": "andi.setor01@gmail.com",
+          "initPass": "Setor123!",
+          "newPass": "Vault#1123!",
+          "rec": "an01@gudangmail.my.id",
+          "status": "hold",
+          "reason": "Garansi 48J"
+        }
+      ]
+    },
+    {
+      "id": "BCH-8401",
+      "workerId": "WRK-01",
+      "workerName": "@andi_ternak",
+      "categoryName": "Gmail Tua 2022–2023",
+      "priceLocked": 6500,
+      "total": 30,
+      "queued": 0,
+      "hold": 0,
+      "approved": 30,
+      "rejected": 0,
+      "status": "APPROVED",
+      "unlockIn": "Selesai",
+      "submittedAt": "04 Nov 2026",
+      "estRp": 195000,
+      "accounts": [
+        {
+          "email": "old.gold2022@gmail.com",
+          "initPass": "Lama123!",
+          "newPass": "Vault#88912!",
+          "rec": "old1@gudangmail.my.id",
+          "status": "approved",
+          "reason": "Lolos Final Check"
+        }
+      ]
+    }
+  ],
+  "workersList": [
+    {
+      "id": "WRK-01",
+      "username": "@andi_ternak",
+      "joined": "12 Sep 2026",
+      "submitted": 1240,
+      "approved": 1195,
+      "holdRp": 357500,
+      "availRp": 320000,
+      "method": "DANA • 081234567890",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "WRK-02",
+      "username": "@rizky_farmer",
+      "joined": "01 Okt 2026",
+      "submitted": 890,
+      "approved": 850,
+      "holdRp": 300000,
+      "availRp": 150000,
+      "method": "GOPAY • 085711223344",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "WRK-03",
+      "username": "@siti_acc",
+      "joined": "19 Okt 2026",
+      "submitted": 640,
+      "approved": 625,
+      "holdRp": 125000,
+      "availRp": 750000,
+      "method": "BCA • 8820192819",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "WRK-04",
+      "username": "@nakal_pullback",
+      "joined": "02 Nov 2026",
+      "submitted": 80,
+      "approved": 0,
+      "holdRp": 0,
+      "availRp": 0,
+      "method": "OVO • 089988776655",
+      "status": "FROZEN"
+    }
+  ],
+  "withdrawals": [
+    {
+      "id": "WD-442",
+      "workerId": "WRK-01",
+      "worker": "@andi_ternak",
+      "method": "DANA - 081234567890 (A/N Andi Pratama)",
+      "amount": 250000,
+      "time": "05 Nov 2026, 19:40",
+      "status": "PAID",
+      "proof": "TF-BCA-992812.jpg"
+    },
+    {
+      "id": "WD-443",
+      "workerId": "WRK-03",
+      "worker": "@siti_acc",
+      "method": "BCA - 8820192819 (A/N Siti Aminah)",
+      "amount": 750000,
+      "time": "Hari ini, 10:05",
+      "status": "PENDING",
+      "proof": null
+    },
+    {
+      "id": "WD-444",
+      "workerId": "WRK-02",
+      "worker": "@rizky_farmer",
+      "method": "GOPAY - 085711223344 (A/N Rizky)",
+      "amount": 150000,
+      "time": "Hari ini, 10:45",
+      "status": "PENDING",
+      "proof": null
+    }
+  ]
+}
